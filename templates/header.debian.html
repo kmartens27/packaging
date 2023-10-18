@@ -9,8 +9,8 @@
 
   <pre class="text-white bg-dark">
     <code>
-  curl -fsSL <a href="{{web_url}}/{{organization}}-2023.key" style="color:white">{{web_url}}/{{organization}}-2023.key</a> | sudo tee \
-    /usr/share/keyrings/jenkins-keyring.asc > /dev/null</code>
+  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+  <a href="{{web_url}}/{{organization}}-2023.key" style="color:white">{{web_url}}/{{organization}}-2023.key</a></code>
   </pre>
 
   Then add a Jenkins apt repository entry:
